@@ -4,7 +4,7 @@ import { restaurants } from '../materials/mock'
 
 ReactDom.createRoot(document.getElementById("root")).render(
     <div>
-        {/* {restaurants.map((item) => (
+        {restaurants.map((item) => (
         <div key={item.id}>
             <h1>{item.name}</h1>
             <h3>MENU</h3>
@@ -20,16 +20,16 @@ ReactDom.createRoot(document.getElementById("root")).render(
             <ul>
             {item.reviews.map((value) => (
                 <li key={value.id}>
-                    <span>{value.user} </span>
+                    <span>{value.user} </span>: 
+                    <span>{value.rating}</span> - 
                     <span>{value.text} </span>
-                    <span>{value.rating}</span>
                 </li>
             ))}
             </ul>
         </div>
-        ))} */}
+        ))}
         {/* а можно и руками поработать */}
-        <div key={restaurants[0].id}>
+        {/* <div key={restaurants[0].id}>
             <h1>{restaurants[0].name}</h1>
             <h3>MENU</h3>
             <ul>
@@ -144,6 +144,6 @@ ReactDom.createRoot(document.getElementById("root")).render(
                     <span>{restaurants[3].reviews[1].rating}</span>
                 </li>
              </ul>
-        </div>
+        </div> */}
     </div>
 );
